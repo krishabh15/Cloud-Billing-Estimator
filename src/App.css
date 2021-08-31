@@ -1,0 +1,166 @@
+.header{
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+
+}
+
+
+:root{
+  --mainDark: #343a40;
+  --mainGrey: rgba(109,109,109);
+  --mainLightGrey: rgba(172,172,172);
+  --mainWhite: #fff;
+
+
+
+
+}
+.App {
+  text-align: left;
+  font-size: calc(10px + 2vmin);
+  color:#050505;
+  
+  
+}
+
+.rowC{
+  display:flex; flex-direction:column;
+  align-items: center;
+  margin-left: 10px;
+  
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  
+  
+}
+
+.App-link {
+  color: #61dafb;
+  
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  
+  background: #343a40;
+  color: rgb(255, 250, 250);
+  font-family: Helvetica;
+  font-weight: 400;
+  width: 100%; 
+  height: 120%;
+  justify-content:center;
+  
+}
+
+.navbar__title {
+  margin-right: auto;
+  font-size:auto;
+  padding: 2px 1px;
+  justify-content: center;
+  text-decoration: none;
+ 
+}
+
+.navbar__item {
+  height: 60px;
+  padding: 1px 15px;
+  cursor: pointer;
+  vertical-align: middle;
+  justify-content: center;
+  text-decoration: none;
+  
+}
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+  margin: 0 ;
+  
+}
+
+.imageheading{
+  justify-content: left;
+  align-items: left;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+
+@media only screen and (max-width:750px){
+  .navbar__item {
+    font-size: 20px;
+  }
+  .navbar__title {
+    font-size: 20px;
+
+  }
+.Iframe{
+ 
+position: relative;
+}
+
+
+  
+}
